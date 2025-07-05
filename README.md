@@ -39,7 +39,7 @@ You can click on the "**Toggle Edit Mode**" button and edit any section of the s
 
 If hosted on GitHub Pages, add your link here:
 
-👉 [View the Website](https://your-username.github.io/wishlist)
+👉 [View the Website](https://pournamx.github.io/wishlist/)
 
 ---
 
