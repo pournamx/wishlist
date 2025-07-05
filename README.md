@@ -28,7 +28,7 @@ You can click on the "**Toggle Edit Mode**" button and edit any section of the s
 
 ## 📸 Preview
 
-![Screenshot of the website](![Screenshot (3)](https://github.com/user-attachments/assets/de1f3c7f-8aef-4aad-bcfd-4879f4890574)
+(![Screenshot (3)](https://github.com/user-attachments/assets/de1f3c7f-8aef-4aad-bcfd-4879f4890574)
 )
 
 > _Add your own screenshot named `screenshot.png` to show what the site looks like!_
