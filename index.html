@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🎁 My Wish List (Editable)</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #6c63ff;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    p.subtitle {
+      margin-top: 8px;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px 30px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    section h2 {
+      color: #6c63ff;
+      font-size: 1.6rem;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+
+    li::marker {
+      color: #6c63ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e4e4e4;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .edit-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #6c63ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .edit-btn:hover {
+      background-color: #4a45d1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="editable">🎁 My Wish List</h1>
+    <p class="subtitle editable">Things I dream to have, explore, or achieve ✨</p>
+  </header>
+
+  <button class="edit-btn" onclick="toggleEdit()">✏️ Toggle Edit Mode</button>
+
+  <div class="container">
+    <section>
+      <h2 class="editable">💻 Tech Gadgets</h2>
+      <ul>
+        <li class="editable">🖥️ Ultra-wide monitor for productivity</li>
+        <li class="editable">⌨️ Mechanical keyboard with backlight</li>
+        <li class="editable">🎧 Noise-cancelling headphones</li>
+        <li class="editable">💻 High-performance laptop for development</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="editable">📚 Books to Read</h2>
+      <ul>
+        <li class="editable">📖 Atomic Habits – James Clear</li>
+        <li class="editable">📖 Deep Work – Cal Newport</li>
+        <li class="editable">📖 The Alchemist – Paulo Coelho</li>
+        <li class="editable">📖 Ikigai – Japanese guide to happiness</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="editable">🧳 Places I Want to Visit</h2>
+      <ul>
+        <li class="editable">🇯🇵 Japan – Cherry blossoms & culture</li>
+        <li class="editable">🇮🇹 Italy – Venice, Rome, and food!</li>
+        <li class="editable">🇫🇷 France – Eiffel Tower & Paris cafés</li>
+        <li class="editable">🇮🇳 Kashmir – Snowy mountains & beauty</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="editable">🎯 Personal Goals</h2>
+      <ul>
+        <li class="editable">👩‍💻 Build and publish 5 websites</li>
+        <li class="editable">🎓 Get a tech internship</li>
+        <li class="editable">📝 Write a technical blog</li>
+        <li class="editable">🌍 Solo trip before 22</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p class="editable">© 2025 Pournami </p>
+  </footer>
+
+  <script>
+    let editMode = false;
+
+    function toggleEdit() {
+      const editableElements = document.querySelectorAll(".editable");
+      editMode = !editMode;
+
+      editableElements.forEach(el => {
+        el.contentEditable = editMode;
+      });
+
+      alert("Edit Mode is now " + (editMode ? "ON ✏️" : "OFF 🔒"));
+    }
+  </script>
+</body>
+</html>
